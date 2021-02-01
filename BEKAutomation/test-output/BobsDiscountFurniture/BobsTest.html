@@ -1,0 +1,424 @@
+<html>
+<head>
+<title>TestNG:  BobsTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BobsTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>65/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 18 16:12:52 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>3472 seconds (3472542 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "1.PDPReDesign-Validate the finish attribute for non mattress products", "PDPNonMattressDesignFeature"</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.cucumber.stepdefinitions.CartStepdefs.i_delete_items_from_cart(CartStepdefs.java:225)
+	at ?.I delete items from cart(src/test/resources/features/PDPNonMattressDesign.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1040357245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1040357245'><pre>java.lang.NullPointerException
+	at com.cucumber.stepdefinitions.CartStepdefs.i_delete_items_from_cart(CartStepdefs.java:225)
+	at ?.I delete items from cart(src/test/resources/features/PDPNonMattressDesign.feature:7)
+</pre></div></td>
+<td>63</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cucumber.runner.HomePage.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.HomePage<br>Test method: Runs Cucumber Feature<br>Parameters: "1.RegisterUserCheckingHeroImageOnHomePage", "HomePage related scenarios"</td>
+<td></td>
+<td>39</td>
+<td>com.cucumber.runner.HomePage@5649fd9b</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "1.Validationofcollectionlinksonlistpage", "CollectionsTestCases"</td>
+<td></td>
+<td>66</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "2. Validation of ViewMore button on collection package page", "CollectionsTestCases"</td>
+<td></td>
+<td>74</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.HomePage.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.HomePage<br>Test method: Runs Cucumber Feature<br>Parameters: "2. registerUser validate Why Bobs", "HomePage related scenarios"</td>
+<td></td>
+<td>136</td>
+<td>com.cucumber.runner.HomePage@5649fd9b</td></tr>
+<tr>
+<td title='com.cucumber.runner.HomePage.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.HomePage<br>Test method: Runs Cucumber Feature<br>Parameters: "3. registerUser validate Uniform Sized Tile Component", "HomePage related scenarios"</td>
+<td></td>
+<td>82</td>
+<td>com.cucumber.runner.HomePage@5649fd9b</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "3.Validation of SkuCodes On Collection Packages Page", "CollectionsTestCases"</td>
+<td></td>
+<td>137</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.HomePage.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.HomePage<br>Test method: Runs Cucumber Feature<br>Parameters: "4. register User Validating Top Navigations", "HomePage related scenarios"</td>
+<td></td>
+<td>65</td>
+<td>com.cucumber.runner.HomePage@5649fd9b</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "4.Validation of By Default First Attribute Should Get Selected on Collection Packages Page", "CollectionsTestCases"</td>
+<td></td>
+<td>78</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "1.PDPReDesign-check the mattress size feel & foundation attributes for mattress product", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>68</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "5.Validation of items description appearing on the Collection Packages Page", "CollectionsTestCases"</td>
+<td></td>
+<td>88</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "2.PDPReDesign-check price Size Dimension Under Size Attribute for mattress product", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>56</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "4.PDPReDesign-Ability to select tiles under select size attribute section for mattress product", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>93</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "6.Validation of Details Header on the Collections PDP Page", "CollectionsTestCases"</td>
+<td></td>
+<td>104</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "5.PDPReDesign-Verify Select Feel info icon attribute on mattress page", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>61</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "6.PDPReDesign-Verify Select Foundation info icon attribute on mattress page", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>51</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "7.Collections items placing order", "CollectionsTestCases"</td>
+<td></td>
+<td>171</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "7.PDPReDesign-Ability to select tiles under select Feel attribute section on mattress page", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>81</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "8.PDPReDesign-Ability to select tiles under select Foundation attribute section on mattress page", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>77</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "8.Collections items verifying the page scrolling to bottom or not", "CollectionsTestCases"</td>
+<td></td>
+<td>101</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "9.PDPReDesign- Ability to select tiles under Goof Proof attribute section on mattress page", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>69</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "9.Validate the select the goof proof checkbox to add the protection plan on Colloection Packages PLP BOB-24583", "CollectionsTestCases"</td>
+<td></td>
+<td>95</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "10.PDPReDesign-Verify Mattress Template Elements", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>64</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.CollectionPackages.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.CollectionPackages<br>Test method: Runs Cucumber Feature<br>Parameters: "10.Validate the Number of items and product reviews on the collections PLP page", "CollectionsTestCases"</td>
+<td></td>
+<td>79</td>
+<td>com.cucumber.runner.CollectionPackages@29ca901e</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "11.PDPReDesign-Verify By default warranty is getting select under product details for mattress page", "PDPMattressDesignFeature"</td>
+<td></td>
+<td>70</td>
+<td>com.cucumber.runner.PDPMattressDesign@6adede5</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "1. validate Delivery Information Page", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>28</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "2.1. registerUser validate Delivery Estimate Selection for "bobtastic"", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>71</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "3.PDPReDesign-Ability to select tiles under select Finish attribute section for non mattress product", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>73</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "2.2. registerUser validate Delivery Estimate Selection for "bobtastic,bobtastic"", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>70</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "4.PDPReDesign-Validate the Color attribute for non mattress products", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>77</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "2.3. registerUser validate Delivery Estimate Selection for "bobtastic,valueexpress"", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>69</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "6.PDPReDesign-Ability to select tiles under select Color attribute section for non mattress product", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>63</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "2.4. registerUser validate Delivery Estimate Selection for "valueexpress,valueexpress"", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>66</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "7.PDPReDesign-check the mattress size attribute for non mattress product", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>66</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "8.PDPReDesign-check price Size Dimension Under Size Attribute for non mattress product", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>62</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "2.5. registerUser validate Delivery Estimate Selection for "bobtastic,valueexpress,factorydirect"", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>84</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "10.PDPReDesign-Ability to select tiles under select size attribute section for non mattress product", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>81</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "2.6. registerUser validate Delivery Estimate Selection for "bobtastic,factorydirect"", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>72</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "11.PDPReDesign-Verify Non Mattress Template Elements", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>62</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdShipping.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdShipping<br>Test method: Runs Cucumber Feature<br>Parameters: "2.7. registerUser validate Delivery Estimate Selection for "factorydirect,factorydirect"", "Threshold Shipping scenarios"</td>
+<td></td>
+<td>72</td>
+<td>com.cucumber.runner.ThresholdShipping@5025a98f</td></tr>
+<tr>
+<td title='com.cucumber.runner.PDPNonMattressDesign.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.PDPNonMattressDesign<br>Test method: Runs Cucumber Feature<br>Parameters: "12.PDPReDesign-Verify Non Mattress goof proof validation", "PDPNonMattressDesignFeature"</td>
+<td></td>
+<td>82</td>
+<td>com.cucumber.runner.PDPNonMattressDesign@2d928643</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "1. validate ERDshipping availability for Bobtastic BOB-21635", "ERD PDP"</td>
+<td></td>
+<td>58</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "1.Validating the Threshold delivery "$29.99" and Whiteglove delivery "$59.99" price sections and shipping charges on both cart and Checkout pages for price "<399.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>149</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "2. validate ERDMessage for non geolocated BOB-21636", "ERD PDP"</td>
+<td></td>
+<td>27</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "3. validate ERDMessage for geolocated BOB-21636", "ERD PDP"</td>
+<td></td>
+<td>79</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "4. validate ERDMessage for geolocated BOB-21637", "ERD PDP"</td>
+<td></td>
+<td>63</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "2.Validating the Threshold delivery "$59.99" and Whiteglove delivery "$89.99" price sections and shipping charges on both cart and Checkout pages for price "400$-599.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>155</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "5. validate ERDshipping availability for products "bobtastic" BOB-21634", "ERD PDP"</td>
+<td></td>
+<td>78</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "6. validate ERDshipping availability for products "valueExpress" BOB-21634", "ERD PDP"</td>
+<td></td>
+<td>63</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "3.Validating the Threshold delivery "$89.99" and Whiteglove delivery "$119.99" price sections and shipping charges on both cart and Checkout pages for price "600$-999.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>157</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "7. validate ERDshipping availability for products "DTC" BOB-21634", "ERD PDP"</td>
+<td></td>
+<td>75</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "8. validate ERDshipping availability for products "OOSOutlet" BOB-21634", "ERD PDP"</td>
+<td></td>
+<td>75</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "4.Validating the Threshold delivery "$89.99" and Whiteglove delivery "$149.99" price sections and shipping charges on both cart and Checkout pages for price "1000$-1299.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>171</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "9. validate ERDshipping availability for products "OOSDTC" BOB-21634", "ERD PDP"</td>
+<td></td>
+<td>91</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ERDPDP.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ERDPDP<br>Test method: Runs Cucumber Feature<br>Parameters: "10. validate ERDshipping availability for products "OOSOther" BOB-21634", "ERD PDP"</td>
+<td></td>
+<td>77</td>
+<td>com.cucumber.runner.ERDPDP@20322d26</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "5.Validating the Threshold delivery "$129.99" and Whiteglove delivery "$179.99" price sections and shipping charges on both cart and Checkout pages for price "1300$-1499.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>163</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "6.Validating the Threshold delivery "$129.99" and Whiteglove delivery "$199.99" price sections and shipping charges on both cart and Checkout pages for price "1500$-1699.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>125</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "7.Validating the Threshold delivery "$129.99" and Whiteglove delivery "$229.99" price sections and shipping charges on both cart and Checkout pages for price "1700$-1999.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>101</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "8.Validating the Threshold delivery "$129.99" and Whiteglove delivery "$259.99" price sections and shipping charges on both cart and Checkout pages for price "2000$-2299.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>129</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "9.Validating the Threshold delivery "$129.99" and Whiteglove delivery "$289.99" price sections and shipping charges on both cart and Checkout pages for price "2300$-2599.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>105</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "10.Validating the Threshold delivery "$129.99" and Whiteglove delivery "$309.99" price sections and shipping charges on both cart and Checkout pages for price "2600$-2899.99$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>105</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "11.Validating the Threshold delivery "$129.99" and Whiteglove delivery "$329.99" price sections and shipping charges on both cart and Checkout pages for price ">2900$"", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>110</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "12.Validating the Threshold delivery and Whiteglove delivery price sections and shipping charges on both cart and Checkout pages for price for products "bobtastic,valueexpress" <399.99$", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>90</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "13.Validating the Threshold delivery and Whiteglove delivery price sections and shipping charges on both cart and Checkout pages for price for products "bobtastic,factorydirect" <399.99$", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>96</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "14.Validating the Threshold delivery and Whiteglove delivery price sections and shipping charges on both cart and Checkout pages for price for products "bobtastic,valueexpress,factorydirect" <399.99$", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>96</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+<tr>
+<td title='com.cucumber.runner.ThresholdTierPriceTier.scenario()'><b>scenario</b><br>Test class: com.cucumber.runner.ThresholdTierPriceTier<br>Test method: Runs Cucumber Feature<br>Parameters: "15.Validating the Threshold delivery price values should be null at checkout step1", "ThresholdTierPriceTier"</td>
+<td></td>
+<td>85</td>
+<td>com.cucumber.runner.ThresholdTierPriceTier@49993335</td></tr>
+</table><p>
+</body>
+</html>
